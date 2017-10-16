@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about">About</string>
+    <string name="generate_error">Generate Error</string>
+    <string name="prachi_sharma_nsharma_prac_husky_neu_edu_n2nd_year_ncomputer_science">Prachi Sharma  \nsharma.prac@husky.neu.edu  \n2nd year  \nComputer Science</string>
+    <string name="textview">TextView</string>
+    <string name="acknowledgment">Acknowledgment</string>
+    <string name="clear">Clear</string>
+    <string name="enter_your_word_here">Enter Your Word here:</string>
+    <string name="_1">1</string>
+    <string name="_1_0_1">1.0.1</string>
+    <string name="dictionary">Dictionary</string>
+    <string name="_2">2</string>
+    <string name="_1_0_2">1.0.2</string>
+</resources>

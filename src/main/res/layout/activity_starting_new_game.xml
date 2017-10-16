@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activitybackground"
+    tools:context="edu.neu.madcourse.prachisharma.StartingNewGame">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/shadow"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="casual"
+                android:text="SCROGGLE"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/EnterName"
+                android:layout_width="237dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.58"
+                android:fontFamily="casual"
+                android:hint="Enter your name"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="WELLCOME TO THE SCROGGLE !!!"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="348dp"
+                android:layout_height="112dp"
+                android:fontFamily="sans-serif"
+                android:text="\n Game is consist of two Phase.Once you complete phase 1 you will move to phase 2.
+                \n You can only move to phase to if atleast select 9 letters from phase 1 and also your score shoulf be more then 0 :P"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                android:layout_weight="0.47" />
+
+            <ImageView
+            android:id="@+id/scoreimg"
+            android:layout_width="116dp"
+            android:layout_height="30dp"
+            android:src="@drawable/scoreimg" />
+
+            <TextView
+                android:id="@+id/ScoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Score will update evertytime you select a correct word \n Scoring is as follows :
+                \n E,A,I,O,N,R,T => 1 POINT \n D,G => 2 POINTS \n B,M,P => 4 POINTS \n F,H,V,W,Y => 5 POINTS \n K =>8POINTS \n Q,Z,J,X => 10 POINTS "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/timeimg"
+                android:layout_width="196dp"
+                android:layout_height="29dp"
+                android:src="@drawable/timmerimg" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Timmer is provided on the top-right corner.\n You will get 1min 15 sec for each phase.
+                 \nTimer will turn red to indicate that only 30 sec has left"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/selectimg"
+                android:layout_width="196dp"
+                android:layout_height="29dp"
+                android:src="@drawable/selectbuttonimg" />
+
+            <TextView
+                android:id="@+id/selecttext"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="To submit your selected letter as a word, touch the selected button on buttom-left \n
+                You can only select adjecent letters"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/pauseimg"
+                android:layout_width="183dp"
+                android:layout_height="29dp"
+                android:src="@drawable/pauseimg" />
+
+            <TextView
+                android:id="@+id/pausetext"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="To pause timmer you can click pause button on button-right corner. \n This will pause the time and hide the board"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/muteimg"
+                android:layout_width="183dp"
+                android:layout_height="29dp"
+                android:src="@drawable/mutebuttonimg" />
+
+            <TextView
+                android:id="@+id/mutetext"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Mute can be use to mute the background music."
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/selectbtngimg"
+                android:layout_width="199dp"
+                android:layout_height="46dp"
+                android:src="@drawable/selectablrewords" />
+
+            <TextView
+                android:id="@+id/selectbutntext"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Words that be select will be shown with blue background"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/nonselectbtngimg"
+                android:layout_width="199dp"
+                android:layout_height="46dp"
+                android:src="@drawable/notselectablewords" />
+
+            <TextView
+                android:id="@+id/nonselectbutntext"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Words that be can not select will be shown with dark grey background"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/wrongimg"
+                android:layout_width="199dp"
+                android:layout_height="46dp"
+                android:src="@drawable/wrongwordimg" />
+
+            <TextView
+                android:id="@+id/wrongtext"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Red Color Indicate selected word is Incorrect"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/correctimg"
+                android:layout_width="199dp"
+                android:layout_height="46dp"
+                android:src="@drawable/correctword" />
+
+            <TextView
+                android:id="@+id/coreecttext"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Green Color Indicate selected word is correct"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/lasttext"
+                android:layout_width="233dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="ALL THE BEST !!!"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="28sp" />
+
+
+
+
+            <Button
+                android:id="@+id/StartGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Game" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

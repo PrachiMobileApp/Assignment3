@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/activitybackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/board"
+    tools:context="edu.neu.madcourse.prachisharma.NewGameActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="casual"
+            android:text="SCROGGLE"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+
+        <GridLayout
+            android:id="@+id/gridlayoutphase1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow"
+            >
+
+            <TextView
+                android:id="@+id/ScoreText"
+                style="@android:style/Widget.DeviceDefault.Light.TextView.SpinnerItem"
+                android:layout_width="96dp"
+                android:layout_height="36dp"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:fontFamily="casual"
+                android:text="Score"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="96dp"
+                android:layout_height="36dp"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:fontFamily="casual"
+                android:text="NAME"
+                android:textColor="#FF4500" />
+            <TextView
+                android:id="@+id/timeCheck"
+                android:layout_width="96dp"
+                android:layout_height="36dp"
+                android:layout_column="2"
+                android:layout_row="0" />
+
+            <include
+                android:id="@+id/large1"
+                layout="@layout/first_board"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="1" />
+
+            <include
+                android:id="@+id/large2"
+                layout="@layout/first_board"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="1" />
+
+            <include
+                android:id="@+id/large3"
+                layout="@layout/first_board"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_row="1" />
+
+            <include
+                android:id="@+id/large4"
+                layout="@layout/first_board"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="2" />
+
+            <include
+                android:id="@+id/large5"
+                layout="@layout/first_board"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="2" />
+
+            <include
+                android:id="@+id/large6"
+                layout="@layout/first_board"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_row="2" />
+
+            <include
+                android:id="@+id/large7"
+                layout="@layout/first_board"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="3" />
+
+            <include
+                android:id="@+id/large8"
+                layout="@layout/first_board"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="3" />
+
+            <include
+                android:id="@+id/large9"
+                layout="@layout/first_board"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_row="3" />
+
+            <Button
+                android:id="@+id/selectButton"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_column="0"
+                android:layout_row="4"
+                android:text="Select"
+                android:textColor="@color/colorPrimary"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="401dp" />
+
+            <Button
+                android:id="@+id/MuteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_column="1"
+                android:layout_row="4"
+                android:onClick="muteBackgroundMusic"
+                android:text="Mute"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/pauseButton"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_column="2"
+                android:layout_row="4"
+                android:onClick="onPause"
+                android:text="Pause"
+                android:textColor="@color/colorPrimary" />
+
+        </GridLayout>
+    </LinearLayout>
+
+
+</ScrollView>
+
+</FrameLayout>
+
+
+
